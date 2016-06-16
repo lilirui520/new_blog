@@ -21,5 +21,5 @@ from article import views as article_views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', article_views.home),
-    url(r'^(?P<my_args>\d+)/$', article_views.detail, name='detail'),
+    url(r'^home/$', article_views.detail),
 ]
